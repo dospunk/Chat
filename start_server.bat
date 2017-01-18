@@ -1,3 +1,5 @@
 @echo off
-cd C:\Users\user\Desktop\Chat
-start nodemon index.js
+cd REM path/to/application
+REM uncomment the next line if you have nodemon
+REM start nodemon index.js
+node index.js
