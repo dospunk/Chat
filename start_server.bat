@@ -1,3 +1,3 @@
 @echo off
-cd C:\Users\user\Desktop\Chat
+cd C:\Users\Connor\Documents\GitHub\Chat
 start nodemon index.js
