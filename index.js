@@ -10,7 +10,6 @@ app.get('/', function(req, res){
   res.sendFile('./home.html', {root: __dirname});
 });
 
-
 io.on('connection', function(socket){
 	console.log("a user connected with ID " + socket.id);
 	socket.on('msg', function(msg){
