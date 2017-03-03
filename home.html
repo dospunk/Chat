@@ -54,13 +54,13 @@
 			var socket = io();
 			$( document ).ready(function(){
 				$('form').submit(function(){
-					console.log("sending message");
+					//console.log("sending message");
 					socket.emit('msg', {message: $('#m').val()});
 					$('#m').val('');
 					return false;
 				});
 				socket.on('msg', function(msg){
-					console.log("received message");
+					//console.log("received message");
 					$('#messages').append($('<li>').text(msg));
 				});
 				$('#c').click(function(){
